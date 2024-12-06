@@ -130,6 +130,14 @@ img {
 .img3 {
   max-height: 40%;
   max-width: 40%;
+  margin-bottom: 35px;
+  margin-left: 35px;
+}
+
+.img4 {
+  max-height: 70%;
+  max-width: 70%;
+  margin-right: 15px;
 }
 
 .fit {
