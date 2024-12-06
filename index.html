@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Escape Room 2</title>
+  </head>
+  <body>
+    <div class="modal2 center-content" id="intro">
+      <div class="modal-content2 center-content" id="intro2"></div>
+    </div>
+    <div class="row1">
+      <div class="column1"></div>
+      <div class="column1"></div>
+      <div class="column1 center-content">
+        <img src="images/3.png" id="3" class="clickable img3 hidden" />
+      </div>
+      <div class="column1"></div>
+      <div class="column1"></div>
+      <div class="column1"></div>
+      <div class="column1"></div>
+      <div class="column1"></div>
+      <div class="column3 red">
+        <div class="row4 center-content text">QUICK</div>
+        <div class="row4 center-content text">SOMETHING</div>
+        <div class="row4 center-content text">IS NEARBY</div>
+        <div class="row4 center-content text">HIDE!</div>
+      </div>
+    </div>
+    <div class="row2">
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2 center-content">
+        <img
+          src="images/sidepad.png"
+          class="img1 mouse"
+          onclick="showModal()"
+        />
+      </div>
+      <div class="column2 center-right">
+        <img
+          src="images/flashlight.png"
+          onclick="uvLight()"
+          class="img2 click mouse margin1"
+          id="flash"
+        />
+      </div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2 center-bottom">
+        <img src="images/8.png" id="8" class="clickable img2 hidden" />
+      </div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2"></div>
+      <div class="column2 center-content">
+        <img src="images/5.png" id="5" class="clickable img2 hidden" />
+      </div>
+    </div>
+    <div class="modal center-content" id="myModal">
+      <span class="close" id="x" onclick="hideModal()">&times;</span>
+      <div class="modal-content">
+        <div class="row7 center-bottom">
+          <input type="text" id="ans" autocomplete="off" />
+        </div>
+        <div class="row7 center-top">
+          <input type="submit" id="sub" onclick="check()" />
+        </div>
+      </div>
+    </div>
+    <div class="modal3 center-content" id="end">
+      <div class="modal-content3 center-content">
+        <video id="hide" style="display: none" controls>
+          <source src="videos/hide.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="preload.js"></script>
+    <audio src="sounds/footstep.mp3" id="foot"></audio>
+    <audio src="sounds/hidelocker.mp3" id="locker"></audio>
+  </body>
+</html>
