@@ -1,0 +1,351 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+  background-image: url("images/hschool.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.row1 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+.row2 {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+
+.row3 {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.row4 {
+  height: 25%;
+  width: 100%;
+  opacity: 1;
+}
+
+.row5 {
+  height: 100%;
+  width: calc(100% / 3);
+}
+
+.row6 {
+  height: 100%;
+  width: calc(50% / 2);
+  display: block;
+}
+
+.row7 {
+  height: 50%;
+  width: 100%;
+}
+
+.column1 {
+  height: 100%;
+  width: 10%;
+}
+
+.column2 {
+  height: 100%;
+  width: 5%;
+}
+
+.column3 {
+  height: 100%;
+  width: 20%;
+  display: block;
+}
+
+.box {
+  height: 10%;
+  width: 25%;
+}
+
+.box2 {
+  height: 10%;
+  width: 25%;
+  margin-left: 310px;
+}
+
+.column3.red {
+  background-color: rgba(90, 1, 1, 0.8);
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.center-bottom {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.center-top {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.center-right {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.center-left {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img1 {
+  max-height: 25%;
+  max-width: 25%;
+}
+
+.img2 {
+  max-height: 70%;
+  max-width: 70%;
+}
+
+.img3 {
+  max-height: 40%;
+  max-width: 40%;
+}
+
+.fit {
+  height: 10%;
+  width: 10%;
+}
+
+.mouse {
+  cursor: pointer;
+}
+
+.click:active {
+  transform: scale(0.95);
+  .erase {
+    opacity: 0;
+  }
+}
+
+.fade {
+  opacity: 0.25;
+}
+
+.margin1 {
+  margin-bottom: 200px;
+}
+
+.text {
+  font-family: Girassol;
+  font-size: 50px;
+}
+
+.uvcursor {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(111, 0, 255, 0.274) 40%,
+    rgba(98, 0, 255, 0.5) 100%
+  );
+  pointer-events: none;
+  transition: background 0.1s;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgb(36, 36, 36);
+  overflow: hidden;
+}
+
+.modal-content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 1;
+  background-image: url("images/rusty.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  overflow: hidden;
+}
+
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+.modal-content2 {
+  width: 90%;
+  height: 90%;
+  background-image: url("images/intro2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 1;
+  margin: 0;
+}
+
+.modal3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  opacity: 1;
+}
+
+.modal-content3 {
+  width: 90%;
+  height: 90%;
+  background-color: black;
+  opacity: 1;
+  margin: 0;
+}
+
+video {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+  pointer-events: none;
+}
+
+.close {
+  color: #aaaaaa;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mouse {
+  cursor: pointer;
+}
+
+.click:active {
+  transform: scale(0.95);
+}
+
+.clickable {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.clickable:hover {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden:hover {
+  opacity: 1;
+  pointer-events: all;
+}
+
+input {
+  font-size: 40px;
+  font-family: Girassol;
+  padding: 14px 20px;
+}
+
+input[type="text"] {
+  color: grey;
+  border: none;
+  height: 15%;
+  width: 5%;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.purple {
+  background-color: purple;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.hpink {
+  background-color: hotpink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.gblue {
+  background-color: aquamarine;
+}
+
+.grey {
+  background-color: dimgray;
+}
+
+@media only screen and (max-width: 600px) {
+}
