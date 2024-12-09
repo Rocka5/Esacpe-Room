@@ -61,7 +61,7 @@ function showModal3() {
   tvVideo.style.display = "block";
   tvVideo.play();
   setTimeout(function () {
-    window.location.href = "https://h7zdpl.csb.app/";
+    window.location.href = "https://kai-louie.github.io/Escape-Room/";
   }, 11500);
 }
 
